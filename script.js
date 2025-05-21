@@ -8,7 +8,7 @@ imgs.forEach(img => img.addEventListener("click", function(ev) {
     newImg.style.position = 'absolute';
     newImg.style.left = '75px';
     newImg.style.top = '50px';
-    newImg.src = `cedited/${imgId}`;
+    newImg.src = `cedited/${imgId}.png`;
 
     let parent = document.querySelector(`.side`)
     parent.appendChild(newImg)
