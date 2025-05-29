@@ -18,7 +18,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(20, 1fr);
     /* height: fit-content; */
-    /* position: relative; */
+    position: relative;
 }
 
 .side > img {
@@ -154,20 +154,38 @@ input {
 .top {
     /* float: left; */
     position: absolute;
-    width: 125px;
-    height: 125px;
-    top: 40px;
+    /* width: 125px; */
+    /* height: 125px; */
+    top: 45px;
     left: 75px;
     overflow: auto;
     resize: both;
     /* margin: 0 auto; */
+    z-index: 2;
+}
+
+.top > img {
+    width: 100%;
+    height: 100%;
+    /* z-index: 2; */
 }
 
 .bottom {
     position: absolute;
-    width: 250px;
+    /* width: 250px; */
     top: 130px;
-    height: 200px;
+    /* height: 200px; */
+    left: 90px;
+    overflow: auto;
+    resize: both;
+    z-index: 1;
+}
+
+.bottom > img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* position: absolute; */
 }
 
 #top-img {

@@ -30,9 +30,9 @@ searchForm.addEventListener("keyup", () => {
     SearchTerm.classList.add("search")
 })
 
-function displayPost() {
+// function displayPost() {
     
-}
+// }
 
 
 j3
