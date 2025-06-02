@@ -58,6 +58,7 @@ html {
     gap: 5px;
     align-items: center;
     margin: 10px;
+    /* justify-content: ; */
 }
 
 .bar > img {
@@ -194,4 +195,10 @@ input {
 
 #bot-img {
     resize: both;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
 }

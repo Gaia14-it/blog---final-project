@@ -19,30 +19,28 @@ imgs.forEach(img => img.addEventListener("click", function(ev) {
 
 const searchForm = document.querySelector(".form")
 const searchInput = document.querySelector(".input")
+let searchBtn = document.querySelector("#searchBtn")
+// let filteredPosts = [...posts]
+// console.log(filteredPosts)
 
-searchForm.addEventListener("keyup", () => {
-    let SearchTerm = searchInput.value.toLowerCase();
+let posts = [...document.querySelectorAll(".post")]
+
+searchBtn.addEventListener("click", (ev) => {
+    ev.preventDefault()
+    let searchTerm = searchInput.value.toLowerCase();
     console.log(searchTerm)
-    filteredPosts = posts.filter(post => {
-        return post.title.inludes(searchTerm)
+    console.log(posts)
+    let filteredPosts = posts.filter(post => {
+        return post.dataset.title.includes(searchTerm)
     })
-    displayPost()
-    SearchTerm.classList.add("search")
+    displayPost(filteredPosts)
+    console.log(filteredPosts)
+    // SearchTerm.classList.add("search")
 })
 
-// function displayPost() {
-    
-// }
+let postsContainer = document.querySelector(".container")
 
+function displayPost(filtered) {
+    filtered[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
 
-j3
-j4
-j6
-j7
-j8
-t1
-t2
-t3
-t4
-t8
-b8
